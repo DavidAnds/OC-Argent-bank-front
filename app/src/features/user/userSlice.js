@@ -1,9 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
-const BASE_URL = "http://localhost:3001/api/v1/user"
+import { API_BASE_URL } from "../../utils/api"
 
 export const login = createAsyncThunk("user/login", async (user, thunkAPI) => {
   try {
-    const response = await fetch(`${BASE_URL}/login`, {
+    const response = await fetch(`${API_BASE_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ export const login = createAsyncThunk("user/login", async (user, thunkAPI) => {
 
 export const getProfile = createAsyncThunk("user/getProfile", async (token, thunkAPI) => {
   try {
-    const response = await fetch(`${BASE_URL}/profile`, {
+    const response = await fetch(`${API_BASE_URL}/profile`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export const getProfile = createAsyncThunk("user/getProfile", async (token, thun
 
 export const updateProfile = createAsyncThunk("user/updateProfile", async (profile, thunkAPI) => {
   try {
-    const response = await fetch(`${BASE_URL}/profile`, {
+    const response = await fetch(`${API_BASE_URL}/profile`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
