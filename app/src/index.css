@@ -54,6 +54,13 @@ body {
 .main-nav-item {
   text-decoration: none;
   margin-right: 0.5rem;
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .main-nav-item:hover {
@@ -288,4 +295,51 @@ body {
   .transaction-button {
     width: 200px;
   }
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+}
+
+.editting-button {
+  padding: 5px 20px;
+  width: 100px;
+  background-color: #fff;
+  border: 1px solid #00bc77;
+  color: #00bc77;
+  box-shadow: none;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.editting-button:hover {
+  background-color: #00bc77;
+  color: #fff;
+}
+
+.editting-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  column-gap: 20px;
+  margin-bottom: 1rem;
+}
+
+.editting-input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  column-gap: 20px;
+  margin-bottom: 1rem;
+}
+
+.editting-input {
+  padding: 5px;
+  font-size: 1.2rem;
+  width: 200px;
 }

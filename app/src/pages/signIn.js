@@ -1,6 +1,6 @@
 import React from "react"
 import NavBar from "../components/NavBar/NavBar"
-import SignInForm from "../components/SignInForm/SignInForm"
+import Login from "../features/user/Login"
 import Footer from "../components/Footer/Footer"
 
 const SignIn = () => {
@@ -11,7 +11,7 @@ const SignIn = () => {
         <section class="sign-in-content">
           <i class="fa fa-user-circle sign-in-icon"></i>
           <h1>Sign In</h1>
-          <SignInForm />
+          <Login />
         </section>
       </main>
       <Footer />
