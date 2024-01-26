@@ -14,7 +14,7 @@ const User = () => {
     if (!user) {
       navigate("/sign-in")
     }
-  }, [user, navigate])
+  }, [user])
 
   return (
     <body>
